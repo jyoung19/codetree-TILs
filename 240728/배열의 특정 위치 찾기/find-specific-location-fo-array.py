@@ -10,4 +10,4 @@ for i in range(10):
         tsum += arr[i]
         count += 1
 
-print(even_sum, tsum/count)
+print(even_sum, round(tsum/count, 1))
