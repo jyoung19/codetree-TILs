@@ -4,14 +4,12 @@ a, b = map(int, input().split())
 res = []
 
 # a가 1이하가 되기 전까지 나눗셈 반복
-while (True):
-    a = a // b
+while (a > 1):
     res.append(a % b)
-    if a <= 1:
-        break
+    a = a // b
 
-n = len(res)
-count_arr = [0] * n
+# b로 나눈 나머지는 0, 1, ... b-1이므로 배열의 길이는 b
+count_arr = [0] * b
 
 # 나머지들이 등장한 횟수를 배열로 저장
 for num in res:
