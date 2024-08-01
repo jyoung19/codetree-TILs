@@ -24,5 +24,5 @@ for i in range(len(query_arr)):
     elif query_arr[i][0] == 3:
         s = query_arr[i][1]
         e = query_arr[i][2]
-        for i in range(s, e+1):  # s번째 원소부터 e번째 원소까지 출력
-            print(arr1[i-1], end=" ")
+        for j in range(s, e+1):  # s번째 원소부터 e번째 원소까지 출력
+            print(arr1[j-1], end=" ")
