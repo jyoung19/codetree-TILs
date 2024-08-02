@@ -7,5 +7,5 @@ for index, number in enumerate(num_arr):
     if number == 2:
         count += 1
     if count == 3:
-        print(index)
+        print(index + 1)
         break
