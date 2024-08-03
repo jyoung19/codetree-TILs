@@ -1,12 +1,17 @@
 n = int(input())
-
 arr = list(map(int, input().split()))
 
-new_arr = []
+min_price = arr[0]
+max_profit = 0
 
-for i in range(len(arr)):
-    for j in range(1, len(arr)-i):
-        if arr[i] < arr[i+j]:
-            new_arr.append(arr[i+j] - arr[i])
+for i in range(1, n):
+    price = arr[i]
+    profit = price - min_price
 
-print(max(new_arr))
+    if profit > max_profit:
+        max_profit = profit
+    
+    if price < min_price:
+        min_price = price
+
+print(max_profit)
