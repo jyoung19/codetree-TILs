@@ -20,4 +20,4 @@ for j in range(4):
 
 print(' '.join(str(sums/4) for sums in sum_rows))
 print(' '.join(str(sums/2) for sums in sum_cols))
-print(sum(sum_rows)/8)
+print(round(sum(sum_rows)/8, 1))
