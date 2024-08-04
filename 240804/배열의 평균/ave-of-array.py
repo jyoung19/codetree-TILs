@@ -18,6 +18,6 @@ for j in range(4):
         sum_col += arr_2d[i][j]
     sum_cols.append(sum_col)
 
-print(' '.join(str(sums/4) for sums in sum_rows))
-print(' '.join(str(sums/2) for sums in sum_cols))
+print(' '.join(str(round(sums/4, 1)) for sums in sum_rows))
+print(' '.join(str(round(sums/2, 1)) for sums in sum_cols))
 print(round(sum(sum_rows)/8, 1))
