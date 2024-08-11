@@ -1,3 +1,6 @@
 str1, char = input().split()
 
-print(str1.find(char))
+if str1.find(char) == -1:
+    print('No')
+else:
+    print(str1.find(char))
